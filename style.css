@@ -8,12 +8,12 @@ body {
 }
 
 #special {
-  right:200px
+  right:200px;
 }
 
 #special a {
   opacity:0.7;
-  padding-left:100px;
+  padding-right:200px;
   text-decoration:none;
   background:none;
   transition: opacity .25s ease-in-out;
