@@ -3,22 +3,26 @@
 <title>55</title>
 </head>
 <script type="text/javascript">
-var quotes = [
-    'abcfdjsklfajdsl'
-    'fdsfdsagsg'
-    'wassup'
-    'peaceout'
-    'im hungry'
-    'nnghg'
-]
+var currentQuote = '';
+var availableQuotes = ['first quote', 'second quote', 'third quote', 'fourth quote'];
 
-function newQuote() {
-var randomNumber = Math.floor(Math.random() * (quotes.length));
-document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+function setRandomQuote() {
+	currentQuote = availableQuotes[Math.floor(Math.random()*availableQuotes.length)];
+	
+	$('#quote').html(currentQuote);
+	$('#tweetQuote').attr('href', 'https://twitter.com/intent/tweet?text='+currentQuote).attr('target', '_blank');
 }
+
+$(function() {
+	$('#randomQuote').click(function() {
+		setRandomQuote();
+	});
+});
 </script>
 <body>
-<script src="javascript.js">
-    <button onclick="newQuote()">New Quote</button>
-</script>
+<div id="quote" class="well">
+	Quote here
+</div>
+<input id="randomQuote" type="button" class="btn btn-primary" value="Random quote">
+<a id="tweetQuote" class="btn btn-info" href="#">Tweet this</a>
 </body>
