@@ -8,6 +8,7 @@ body {
 }
 
 #special {
+  left:-200px;
   right:200px;
   margin-right:200px;
 }
