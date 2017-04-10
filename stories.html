@@ -1,2 +1,26 @@
-happy birthday to you, happy birthday to you, happy birthday dear<br>
-nikita, happy birthday to...you..
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Random Link</title>
+<script type="text/javascript"><!--
+var links = new Array();
+links[0]="http://www.google.com";
+links[1]="http://www.msn.com";
+links[2]="http://www.yahoo.com";   
+links[3]="http://www.ebay.com";
+links[4]="http://www.cnn.com";
+
+function getRandomLink() {
+	var randomNum = Math.floor(Math.random()*links.length);
+	window.location = links[randomNum];
+}
+//--></script>
+</head>
+
+<body>
+<form name="" action="">
+	<input type="button" value="Go to random link!" onclick="getRandomLink()" />
+</form>
+</body>
+</html>
