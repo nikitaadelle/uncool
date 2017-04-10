@@ -4,23 +4,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>12</title>
 <script type="text/javascript"><!--
-var String = new Array();
-String[0]="Knock Knock";
-String[1]="Who's there";
-String[2]="It's me";   
-String[3]="Mewho?";
-String[4]="Nikita, haha";
+function getString() {
 
-function getRandomString() {
-	var randomNum = Math.floor(Math.random()*links.length);
-	return String;
+var myString = new Array();
+    myString[1] = "img/who/1.jpg";
+    myString[2] = "img/who/2.jpg";
+    myString[3] = "img/who/3.jpg";
+  var rnd = Math.floor(Math.random() * myString.length);
+    if (rnd == 0) {
+            rnd = 1;
+    }
+
+  document.getElementById("gen-img").src = myString[rnd];
 }
 //--></script>
 </head>
 
 <body>
 <script type="text/javascript">
-  document.write(getRandomString());
+<p><img id="gen-img" src="img/who/1.jpg"></p>
+<p><input type="button" value="Random" onclick="getString();" /></p>
 </script>
 </body>
 </html>
