@@ -13,7 +13,7 @@ body {
 
 #special a {
   opacity:0.7;
-  margin-right:80px;
+  margin-right:50px;
   text-decoration:none;
   background:none;
   transition: opacity .25s ease-in-out;
