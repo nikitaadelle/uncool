@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Random Link</title>
 <script type="text/javascript"><!--
-var links = new Array();
-links[0]="http://www.google.com";
-links[1]="http://www.msn.com";
-links[2]="http://www.yahoo.com";   
-links[3]="http://www.ebay.com";
-links[4]="http://www.cnn.com";
+var String = new Array();
+String[0]="Knock Knock";
+String[1]="Who's there";
+String[2]="It's me";   
+String[3]="Mewho?";
+String[4]="Nikita, haha";
 
-function getRandomLink() {
+function getRandomString() {
 	var randomNum = Math.floor(Math.random()*links.length);
 	window.location = links[randomNum];
 }
@@ -20,7 +20,7 @@ function getRandomLink() {
 
 <body>
 <form name="" action="">
-	<input type="button" value="Go to random link!" onclick="getRandomLink()" />
+	<input type="button" value="Go to random link!" onclick="getRandomString()" />
 </form>
 </body>
 </html>
