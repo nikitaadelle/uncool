@@ -3,7 +3,21 @@
 <html>
 
 <title>n/a.</title>
+<head>
+ <script type="text/javascript"><!--
+var links = new Array();
+links[0]="http://www.google.com";
+links[1]="http://www.msn.com";
+links[2]="http://www.yahoo.com";   
+links[3]="http://www.ebay.com";
+links[4]="http://www.cnn.com";
+function getRandomLink() {
+	var randomNum = Math.floor(Math.random()*links.length);
+	window.location = links[randomNum];
+}
+//--></script>
 <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
 <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;"> 
 <br><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <big><big><big><big>nikita collector.</big></big></big></big><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <big><i>don't take anything here too seriously.</i></big>
@@ -16,6 +30,10 @@
   <a><strike>unknown</strike></a> &nbsp; &nbsp; &nbsp; 
   <a href="/uncool/people" style="color:#8BC278;">people</a> &nbsp; &nbsp; &nbsp; 
   <a href="/uncool/dreams" style="color:#AF78C2;">dreams</a>
+  
+<form name="" action="">
+	<input type="button" value="List Generator" onclick="getRandomLink()" />
+</form>
  </div>
 <br>
 <img src="http://37.media.tumblr.com/7dd380b95976c7e1934a54f485e95264/tumblr_n04tvkBs331r0jdk7o1_500.gif;" style="padding-left:500px;width:400px;height:auto;">
