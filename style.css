@@ -35,8 +35,8 @@ body {
    -ms-transition: opacity .25s ease-in-out;
 }
 
-.button {
-    background-color: #FFF; /* Green */
+.form {
+    background-color: #FFF;
     border: none;
     color: #000;
     text-decoration: none;
