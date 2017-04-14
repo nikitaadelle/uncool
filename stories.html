@@ -1,28 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Random Link</title>
 <script type="text/javascript"><!--
-var currentQuote = '';
-var availableQuotes = ['first quote', 'second quote', 'third quote', 'fourth quote'];
-
-function setRandomQuote() {
-	currentQuote = availableQuotes[Math.floor(Math.random()*availableQuotes.length)];
-	
-	$('#quote').html(currentQuote);
-	$('#tweetQuote').attr('href', 'https://twitter.com/intent/tweet?text='+currentQuote).attr('target', '_blank');
+var links = new Array();
+links[0]="http://www.google.com";
+links[1]="http://www.msn.com";
+links[2]="http://www.yahoo.com";   
+links[3]="http://www.ebay.com";
+links[4]="http://www.cnn.com";
+function getRandomLink() {
+	var randomNum = Math.floor(Math.random()*links.length);
+	window.location = links[randomNum];
 }
-
-$(function() {
-	$('#randomQuote').click(function() {
-		setRandomQuote();
-	});
-});
-</script>
+//--></script>
 </head>
 
 <body>
-<div id="quote" class="well">
-	Quote here
-<input id="randomQuote" type="button" class="btn btn-primary" value="Random quote">
+<form name="" action="">
+	<input type="button" value="Go to random link!" onclick="getRandomLink()" />
+</form>
 </body>
+</html>
